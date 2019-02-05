@@ -1,0 +1,15 @@
+[
+null,
+{"id":1,"battlerName":"Abu","characterIndex":0,"characterName":"Abu","classId":4,"equips":[1,1,2,3,0],"faceIndex":0,"faceName":"Abu","traits":[],"initialLevel":1,"maxLevel":99,"name":"Abu Folha-Verde","nickname":"Abu","note":"","profile":""},
+{"id":2,"battlerName":"Davi","characterIndex":0,"characterName":"Davi","classId":1,"equips":[2,1,2,3,0],"faceIndex":0,"faceName":"Davi","traits":[],"initialLevel":1,"maxLevel":99,"name":"Davi Tomba-Montanha","nickname":"Davi","note":"","profile":""},
+{"id":3,"battlerName":"Yago","characterIndex":0,"characterName":"Yago","classId":3,"equips":[3,0,2,3,4],"faceIndex":0,"faceName":"Yago","traits":[],"initialLevel":1,"maxLevel":99,"name":"Yago Passo-Mudo","nickname":"Yago","note":"","profile":""},
+{"id":4,"battlerName":"Melkor","characterIndex":0,"characterName":"Melkor","classId":2,"equips":[4,0,2,3,4],"faceIndex":0,"faceName":"Melkor","traits":[],"initialLevel":1,"maxLevel":99,"name":"Melkor Amassa-Lata","nickname":"Melkor","note":"","profile":""},
+{"id":5,"battlerName":"LOBO bugado","characterIndex":0,"characterName":"Dog 3","classId":5,"equips":[0,0,0,0,0],"faceIndex":0,"faceName":"Tirolês","traits":[],"initialLevel":1,"maxLevel":99,"name":"Tirolês","nickname":"Tiro","note":"","profile":""},
+{"id":6,"battlerName":"","characterIndex":0,"characterName":"","classId":1,"equips":[0,0,0,0,0],"faceIndex":0,"faceName":"","traits":[],"initialLevel":1,"maxLevel":99,"name":"","nickname":"","note":"","profile":""},
+{"id":7,"battlerName":"","characterIndex":0,"characterName":"","classId":1,"equips":[0,0,0,0,0],"faceIndex":0,"faceName":"","traits":[],"initialLevel":1,"maxLevel":99,"name":"","nickname":"","note":"","profile":""},
+{"id":8,"battlerName":"","characterIndex":0,"characterName":"","classId":1,"equips":[0,0,0,0,0],"faceIndex":0,"faceName":"","traits":[],"initialLevel":1,"maxLevel":99,"name":"","nickname":"","note":"","profile":""},
+{"id":9,"battlerName":"","characterIndex":0,"characterName":"","classId":1,"equips":[0,0,0,0,0],"faceIndex":0,"faceName":"","traits":[],"initialLevel":1,"maxLevel":99,"name":"","nickname":"","note":"","profile":""},
+{"id":10,"battlerName":"","characterIndex":0,"characterName":"","classId":1,"equips":[0,0,0,0,0],"faceIndex":0,"faceName":"","traits":[],"initialLevel":1,"maxLevel":99,"name":"","nickname":"","note":"","profile":""},
+{"id":11,"battlerName":"","characterIndex":0,"characterName":"","classId":1,"equips":[0,0,0,0,0],"faceIndex":0,"faceName":"","traits":[],"initialLevel":1,"maxLevel":99,"name":"","nickname":"","note":"","profile":""},
+{"id":12,"battlerName":"","characterIndex":0,"characterName":"","classId":1,"equips":[0,0,0,0,0],"faceIndex":0,"faceName":"","traits":[],"initialLevel":1,"maxLevel":99,"name":"","nickname":"","note":"","profile":""}
+]
