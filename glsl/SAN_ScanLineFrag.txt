@@ -1,0 +1,31 @@
+//=============================================================================
+// SAN_ScanLineFrag.txt
+//=============================================================================
+// Copyright (c) 2018 Sanshiro
+// Released under the MIT license
+// http://opensource.org/licenses/mit-license.php
+//=============================================================================
+
+varying vec2 vTextureCoord;
+uniform sampler2D uSampler;
+uniform float uTime;
+uniform float uFadeRate;
+uniform vec2 uResolution;
+
+void main(void) {
+    vec4 color = texture2D(uSampler, vTextureCoord);
+    float y = vTextureCoord.y * uResolution.y;
+    float scanLinePitch = 2.0;
+    float beatTonePitch = 120.0;
+    float time = uTime * 30.0;
+
+    float scanLine = 1.0 +
+        step(0.8, mod(y, scanLinePitch) / scanLinePitch) * 0.5 * uFadeRate;
+    float beatTone = 1.0 +
+        step(0.7, mod(y - time, beatTonePitch) / beatTonePitch) * 0.2 * uFadeRate;
+
+    color.rgb *= scanLine;
+    color.rgb *= beatTone;
+
+    gl_FragColor = color;
+}

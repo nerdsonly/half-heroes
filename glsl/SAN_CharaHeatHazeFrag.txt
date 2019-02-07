@@ -1,0 +1,65 @@
+//=============================================================================
+// SAN_CharaHeatHazeFrag.txt
+//=============================================================================
+// Copyright (c) 2018 Sanshiro
+// Released under the MIT license
+// http://opensource.org/licenses/mit-license.php
+//=============================================================================
+
+varying vec2 vTextureCoord;
+uniform sampler2D uSampler;
+uniform float uTime;
+uniform float uFadeRate;
+uniform vec2 uPosition;
+uniform float uInnerRadius;
+uniform float uOuterRadius;
+uniform float uStrength;
+uniform float uPitch;
+uniform float uR;
+uniform float uG;
+uniform float uB;
+
+const float PI = 3.1415926535897932384626433832795;
+
+float cos2(float theta) {
+    return (cos(theta) + 1.0) / 2.0;
+}
+
+float sin2(float theta) {
+    return (sin(theta) + 1.0) / 2.0;
+}
+
+float cosWindow(float l, float lMin, float lMax) {
+    l = max(lMin, min(l, lMax));
+    return cos2((2.0 * PI * (l - lMin) / (lMax - lMin)) - PI);
+}
+
+vec4 colorCoef(float rate) {
+    vec4 color = vec4(uR, uG, uB, 1.0);
+    return ((color - vec4(1.0)) * rate) + vec4(1.0);
+}
+
+float hazeGain(float level, float y) {
+    return (
+        (0.01 / level) *
+        sin(PI / 5.0 * uPitch * uTime * level) *
+        sin(PI / 7.0 * uPitch * (y / level + uTime * level))
+    );
+}
+
+void main(void) {
+    vec2 relVecXy = gl_FragCoord.xy - uPosition;
+    float relLen = length(relVecXy);
+    float window = cosWindow(relLen, uInnerRadius, uOuterRadius);
+    float power = uStrength * uFadeRate;
+    float haze = 0.0;
+    haze += hazeGain(17.0, relVecXy.y);
+    haze += hazeGain(11.0, relVecXy.y);
+    haze += hazeGain(7.0, relVecXy.y);
+    haze += hazeGain(5.0, relVecXy.y);
+    haze += hazeGain(3.0, relVecXy.y);
+    vec2 texVec = vec2(haze * power * window, 0.0);
+    vec4 color = texture2D(uSampler, vTextureCoord + texVec);
+    vec4 colorCoef = colorCoef(abs(haze * power * window * 100.0));
+    gl_FragColor = color * colorCoef;
+}

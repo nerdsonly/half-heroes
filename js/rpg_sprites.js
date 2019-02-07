@@ -1,5 +1,5 @@
 //=============================================================================
-// rpg_sprites.js v1.6.1
+// rpg_sprites.js v1.6.0
 //=============================================================================
 
 //-----------------------------------------------------------------------------
@@ -1810,8 +1810,8 @@ Sprite_Weapon.prototype.loadBitmap = function() {
 Sprite_Weapon.prototype.updateFrame = function() {
     if (this._weaponImageId > 0) {
         var index = (this._weaponImageId - 1) % 12;
-        var w = 96;
-        var h = 64;
+        var w = 144;//èâä˙íl96
+        var h = 96;//èâä˙íl64
         var sx = (Math.floor(index / 6) * 3 + this._pattern) * w;
         var sy = Math.floor(index % 6) * h;
         this.setFrame(sx, sy, w, h);
@@ -2535,7 +2535,6 @@ Spriteset_Battle.prototype.battleback2Name = function() {
 };
 
 Spriteset_Battle.prototype.overworldBattleback1Name = function() {
-    if ($gameMap.battleback1Name() === '') return '';
     if ($gamePlayer.isInVehicle()) {
         return this.shipBattleback1Name();
     } else {
@@ -2544,7 +2543,6 @@ Spriteset_Battle.prototype.overworldBattleback1Name = function() {
 };
 
 Spriteset_Battle.prototype.overworldBattleback2Name = function() {
-    if ($gameMap.battleback2Name() === '') return '';
     if ($gamePlayer.isInVehicle()) {
         return this.shipBattleback2Name();
     } else {

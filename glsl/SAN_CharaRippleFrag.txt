@@ -1,0 +1,53 @@
+//=============================================================================
+// SAN_CharaCircWaveFrag.txt
+//=============================================================================
+// Copyright (c) 2018 Sanshiro
+// Released under the MIT license
+// http://opensource.org/licenses/mit-license.php
+//=============================================================================
+
+varying vec2 vTextureCoord;
+uniform sampler2D uSampler;
+uniform float uTime;
+uniform float uFadeRate;
+uniform vec2 uPosition;
+uniform float uInnerRadius;
+uniform float uOuterRadius;
+uniform float uStrength;
+uniform float uPitch;
+uniform float uR;
+uniform float uG;
+uniform float uB;
+
+const float PI = 3.1415926535897932384626433832795;
+
+float cos2(float theta) {
+    return (cos(theta) + 1.0) / 2.0;
+}
+
+float sin2(float theta) {
+    return (sin(theta) + 1.0) / 2.0;
+}
+
+float cosWindow(float l, float lMin, float lMax) {
+    l = max(lMin, min(l, lMax));
+    return cos2((2.0 * PI * (l - lMin) / (lMax - lMin)) - PI);
+}
+
+vec4 colorCoef(float rate) {
+    vec4 color = vec4(uR, uG, uB, 1.0);
+    return ((color - vec4(1.0)) * rate) + vec4(1.0);
+}
+
+void main(void) {
+    vec2 relVecXy = gl_FragCoord.xy - uPosition;
+    float relLen = length(relVecXy);
+    float power = uStrength * uFadeRate;
+    float wave = sin2(PI / 2.0 * relLen / 4.0 * uPitch - uTime * 8.0);
+    float window = cosWindow(relLen, uInnerRadius, uOuterRadius);
+    float texLen = 0.01 * wave * power * window;
+    vec2 texVec = normalize(relVecXy) * texLen;
+    vec4 color = texture2D(uSampler, vTextureCoord + texVec);
+    vec4 colorCoef = colorCoef(wave * power * window);
+    gl_FragColor = color * colorCoef;
+}
