@@ -11,7 +11,7 @@ var $plugins =
 {"name":"EnemyBook","status":true,"description":"Displays detailed statuses of enemies.","parameters":{"Unknown Data":"??????"}},
 {"name":"Foreground","status":true,"description":"display foreground tiling sprite(Ver1.0.1)","parameters":{}},
 {"name":"ItemBook","status":true,"description":"Displays detailed statuses of items.","parameters":{"Unknown Data":"??????","Price Text":"Price","Equip Text":"Equip","Type Text":"Type"}},
-{"name":"MadeWithMv","status":true,"description":"Show a Splash Screen \"Made with MV\" and/or a Custom Splash Screen before going to main screen.","parameters":{"Show Made With MV":"true","Made with MV Image":"MadeWithMv","Show Custom Splash":"false","Custom Image":"","Fade Out Time":"120","Fade In Time":"120","Wait Time":"160"}},
+{"name":"MadeWithMv","status":true,"description":"Show a Splash Screen \"Made with MV\" and/or a Custom Splash Screen before going to main screen.","parameters":{"Show Made With MV":"False","Made with MV Image":"MadeWithMv","Show Custom Splash":"false","Custom Image":"","Fade Out Time":"60","Fade In Time":"60","Wait Time":"100"}},
 {"name":"ParallaxLayerMap","status":true,"description":"ParallaxLayerMapPlugin","parameters":{}},
 {"name":"SAN_ShaderFilter","status":true,"description":"Shader filter 1.0.0\r\nVisual effect by shader filter","parameters":{}},
 {"name":"SAN_ShaderFilterCharaHeatHaze","status":true,"description":"Character heat haze effect filter 1.0.0\r\nEffect filter which displays the effect of the heat haze around the character.","parameters":{}},
