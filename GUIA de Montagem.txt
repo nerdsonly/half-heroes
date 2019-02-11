@@ -1,0 +1,20 @@
+0- Add novo Membro ao GRUPO - ME 0 Victory1 (55,88,0)
+
+1-SOM DE QUEST SE: Flash1 (100, 120, 0 )
+---- Texto de Quest \C[17]
+
+2-SOM DE ADQUIRIR ITENS SE EVASION1 (60,100,0)
+----Perder itens SE CANCEL (70,90,0)
+
+3-COR PADRÃO PARA nome de ITENS: \C[6]
+
+4-COR DE NOMES DE QUEM FALA: \C[23] ---- \C[0] Cor do texto quem fala
+
+5-COR DE LUGARES: \C[13]
+
+6-COR DE NOMES PRÓPRIOS EM TEXTO: \C[24]
+
+7-MULTIPLA ESCOLHA 1 \C[1]  2 \C[3]  3 \C[5]  4 \C[4]
+
+8- Texto de QUEST
+
