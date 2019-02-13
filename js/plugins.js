@@ -8,7 +8,7 @@ var $plugins =
 {"name":"WeaponSkill","status":true,"description":"Change skill id of attack for each weapon.","parameters":{}},
 {"name":"AltMenuScreen","status":true,"description":"Alternative menu screen layout.","parameters":{}},
 {"name":"AltSaveScreen","status":true,"description":"Alternative save/load screen layout.","parameters":{}},
-{"name":"Community_Basic","status":true,"description":"Plugin used to set basic parameters.","parameters":{"cacheLimit":"10","screenWidth":"816","screenHeight":"624","changeWindowWidthTo":"","changeWindowHeightTo":"","renderingMode":"auto","alwaysDash":"off"}},
+{"name":"Community_Basic","status":true,"description":"Plugin used to set basic parameters.","parameters":{"cacheLimit":"10","screenWidth":"1280","screenHeight":"720","changeWindowWidthTo":"","changeWindowHeightTo":"","renderingMode":"auto","alwaysDash":"off"}},
 {"name":"EnemyBook","status":true,"description":"Displays detailed statuses of enemies.","parameters":{"Unknown Data":"??????"}},
 {"name":"Foreground","status":true,"description":"display foreground tiling sprite(Ver1.0.1)","parameters":{}},
 {"name":"ItemBook","status":true,"description":"Displays detailed statuses of items.","parameters":{"Unknown Data":"??????","Price Text":"Price","Equip Text":"Equip","Type Text":"Type"}},
@@ -20,8 +20,8 @@ var $plugins =
 {"name":"SAN_ShaderFilterScanLine","status":true,"description":"Scan line effect filter 1.0.0\r\nDisplay scan lines on the sprite.","parameters":{}},
 {"name":"TitleCommandPosition","status":true,"description":"Changes the position of the title command window.","parameters":{"Offset X":"0","Offset Y":"0","Width":"240","Background":"0"}},
 {"name":"YEP_SaveEventLocations","status":true,"description":"v1.03 Habilita mapas específicos a memorizarem as\nlocalizações de eventos quando saindo e carregando-os após re-entrar no mapa.","parameters":{}},
-{"name":"MOG_CursorBorder","status":true,"description":"(v1.0) Adiciona bordas na seleção de comandos.","parameters":{"Border Visible":"true","Border Line Visible":"true","Border Animation":"false","X-Axis Offset":"0","Y-Axis Offset":"0","Border X-Space":"4","Border Y-Space":"4"}},
+{"name":"MOG_CursorBorder","status":true,"description":"(v1.0) Adiciona bordas na seleção de comandos.","parameters":{"Border Visible":"true","Border Line Visible":"true","Border Animation":"True","X-Axis Offset":"0","Y-Axis Offset":"0","Border X-Space":"4","Border Y-Space":"4"}},
 {"name":"MOG_EmergeMotion","status":true,"description":"(v1.4 *) Adiciona a animação dos inimigos emergindo.","parameters":{"Initial Wait":"30","Wait for the Next":"20"}},
 {"name":"MOG_Scrollbar","status":true,"description":"(v2.2) Adiciona uma barra de rolamento nas janelas.","parameters":{"Always Visible":"true","X-Axis":"0","Y-Axis":"0","Button X-Axis":"1","Button Y-Axis":"1"}},
-{"name":"MOG_ATB","status":true,"description":"(v0.3 *) Sistema de batalha em tempo real.","parameters":{"ATB Mode":"2","ATB Max Value":"4000","Turn Duration":"480","States Duration":"180","Escape Duration":"180","Skip Emerge Message":"true","Full SE":"audio/se/Book1","Change Actor Left":"pagedown","Change Actor Right":"pageup","Escape Button":"cancel","Escape Layout X":"600","Escape Layout Y":"64","Escape Gauge X":"6","Escape Gauge Y":"16"}}
+{"name":"MOG_ATB","status":false,"description":"(v0.3 *) Sistema de batalha em tempo real.","parameters":{"ATB Mode":"2","ATB Max Value":"4000","Turn Duration":"480","States Duration":"180","Escape Duration":"180","Skip Emerge Message":"true","Full SE":"audio/se/Book1","Change Actor Left":"pagedown","Change Actor Right":"pageup","Escape Button":"cancel","Escape Layout X":"600","Escape Layout Y":"64","Escape Gauge X":"6","Escape Gauge Y":"16"}}
 ];
