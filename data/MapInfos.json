@@ -1,7 +1,12 @@
 [
 null,
-{"id":1,"expanded":false,"name":"Lago Sossêgo","order":2,"parentId":2,"scrollX":819,"scrollY":461},
-{"id":2,"expanded":true,"name":"Villa","order":1,"parentId":0,"scrollX":811,"scrollY":499},
-{"id":3,"expanded":false,"name":"Casa da Árvore(dentro)","order":3,"parentId":1,"scrollX":819,"scrollY":461},
-{"id":4,"expanded":false,"name":"Templo da Villa","order":4,"parentId":2,"scrollX":819,"scrollY":461}
+{"id":1,"expanded":true,"name":"Lago Sossêgo","order":3,"parentId":4,"scrollX":817,"scrollY":455.5},
+{"id":2,"expanded":true,"name":"Villa","order":1,"parentId":0,"scrollX":809,"scrollY":499.5},
+{"id":3,"expanded":false,"name":"Casa da Árvore(dentro)","order":4,"parentId":1,"scrollX":817,"scrollY":455.5},
+{"id":4,"expanded":true,"name":"Templo da Villa","order":2,"parentId":2,"scrollX":817,"scrollY":455.5},
+{"id":5,"expanded":true,"name":"Residência dos Amassa-Latas","order":5,"parentId":4,"scrollX":817,"scrollY":455.5},
+{"id":6,"expanded":true,"name":"Residência dos Folha-Verde","order":6,"parentId":5,"scrollX":817,"scrollY":455.5},
+{"id":7,"expanded":true,"name":"Centro Tomba-Montanha","order":7,"parentId":6,"scrollX":817,"scrollY":455.5},
+{"id":8,"expanded":true,"name":"Residência dos Folha-Verde","order":8,"parentId":7,"scrollX":817,"scrollY":455.5},
+{"id":9,"expanded":true,"name":"Residência dos Folha-Verde","order":9,"parentId":6,"scrollX":819,"scrollY":461}
 ]
